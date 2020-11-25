@@ -18,6 +18,9 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.FileOutputStream;
+import java.io.IOException;
+
 public class MainActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
     SharedPreferences sharedPreferences;
     ListView listView;
@@ -94,4 +97,23 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         Toast.makeText(this,"Saved data in shared preferences!",Toast.LENGTH_LONG).show();
     }
-}
+
+    public void saveInternal(View view){
+        FileOutputStream outputStream=null;
+        String str= cName+", "+ cSaint+", "+ cYear;
+        byte[] comments= str.getBytes();
+        try{
+            outputStream= openFileOutput("clickedItems.txt", Context.MODE_PRIVATE);
+            outputStream.write(comments);
+        }catch (Exception e ){
+            e.printStackTrace();
+        }finally {
+            try{
+                outputStream.close();
+            }catch (IOException io){
+                io.printStackTrace();
+            }
+        }
+
+        Toast.makeText(this,"Saved data in internal storage!",Toast.LENGTH_LONG).show();
+}}
