@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+    <LinearLayout tools:context=".MainActivity" android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="match_parent" xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView android:layout_height="75dp" android:layout_width="75dp" android:id="@+id/collegeIcon" android:src="@mipmap/ic_launcher"/>
+
+
+    -<LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/collegeName" android:textStyle="bold" android:textSize="20sp" android:textColor="#000" android:text="Main Title" android:layout_margin="5dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/patronSaint" android:textStyle="bold" android:textSize="15sp" android:textColor="#a9a9a9" android:text="Patron Saint" android:layout_margin="5dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/foundedDate" android:textStyle="bold" android:textSize="15sp" android:textColor="#a9a9a9" android:text="Founder" android:layout_margin="5dp"/>
+
+</LinearLayout>
+
+</LinearLayout>

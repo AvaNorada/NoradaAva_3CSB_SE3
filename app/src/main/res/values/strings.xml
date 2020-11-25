@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">SUMMATIVE EXAM 3</string>
+
+    <string-array name="collegeName">
+        <item>inst. of Information and Computing Sciences</item>
+        <item>Faculty of Engineering</item>
+        <item>College of Architecture</item>
+    </string-array>
+    <string-array name="patronName">
+        <item>St. Vincent Ferrer</item>
+        <item>Blessed Jordan of Saxony</item>
+        <item>Thomas the Apostle</item>
+    </string-array>
+    <string-array name="founded">
+        <item>Founded on 2014</item>
+        <item>Founded on 1907</item>
+        <item>Founded on 1930</item>
+    </string-array>
+</resources>

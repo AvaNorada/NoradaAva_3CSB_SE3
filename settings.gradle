@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "NoradaAva_3CSB_SE3"
